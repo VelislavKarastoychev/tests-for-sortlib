@@ -1,0 +1,22 @@
+{
+  "name": "tests-for-sortlib",
+  "version": "1.0.0",
+  "description": "Tests for the @euriklis/sortlib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VelislavKarastoychev/tests-for-sortlib.git"
+  },
+  "keywords": [
+    "sortlib"
+  ],
+  "author": "Euriklis <euriklis@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VelislavKarastoychev/tests-for-sortlib/issues"
+  },
+  "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme"
+}
