@@ -4,7 +4,8 @@
   "description": "Tests for the @euriklis/sortlib",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/VelislavKarastoychev/tests-for-sortlib/issues"
   },
-  "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme"
+  "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme",
+  "dependencies": {
+    "@euriklis/message": "^1.2.3",
+    "@euriklis/sortlib": "^1.1.6",
+    "@euriklis/validator": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
