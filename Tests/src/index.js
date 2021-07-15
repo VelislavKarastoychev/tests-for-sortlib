@@ -12,6 +12,7 @@ const putElementInSortedArray = require('./putElementInSortedArray');
 const quick_sort = require('./quick_sort');
 const selection_sort = require('./selection_sort');
 const heap_sort = require('./heap_sort');
+const sort_object_array_by_property = require('./sort_object_array_by_property');
 module.exports = {
     bubble_sort,
     bucket_sort,
@@ -26,5 +27,5 @@ module.exports = {
     putElementInSortedArray,
     quick_sort,
     selection_sort,
-
+    sort_object_array_by_property,
 };
