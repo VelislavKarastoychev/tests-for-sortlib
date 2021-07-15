@@ -9,6 +9,4 @@ const scope = copy_array(random_array);
 const target = copy_array(random_array).sort((a, b) => {
   return a.value - b.value;
 });
-
-output = {scope, target};
-module.exports = output;
+module.exports = {scope, target, property : 'value'};
