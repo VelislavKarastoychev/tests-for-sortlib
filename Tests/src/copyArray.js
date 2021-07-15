@@ -2,7 +2,7 @@
 /**
  * 
  * @param {Array.<number | string | object>} array
- * @return {Array.<number | string | object>}
+ * @returns {Array.<number | string | object>}
  * @description this function makes fast deep copy
  * of an array of strings, numbers or objects. We
  * use the so called double shifting for more time
