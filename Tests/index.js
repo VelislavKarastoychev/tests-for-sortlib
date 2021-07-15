@@ -57,17 +57,60 @@ async function run_tests() {
       controlled_error_message(error.message);
     }
     // test bubble sort sorting algorithm:
-    await library_methods.bubble_sort(data.numberSort, 'bubble sort with random number elements');
-    await library_methods.bubble_sort(data.stringSort, 'bubble sort with random string elements');
+    await library_methods.bubble_sort(
+      data.numberSort,
+      "bubble sort with random number elements"
+    );
+    await library_methods.bubble_sort(
+      data.stringSort,
+      "bubble sort with random string elements"
+    );
     // test the insertion sort algorithm
-    await library_methods.insertion_sort(data.numberSort, 'Insertion sort with random number elements');
-    await library_methods.insertion_sort(data.stringSort, 'Insertion sort with random string elements');
+    await library_methods.insertion_sort(
+      data.numberSort,
+      "Insertion sort with random number elements"
+    );
+    await library_methods.insertion_sort(
+      data.stringSort,
+      "Insertion sort with random string elements"
+    );
     // test the selection sort algorithm
-    await library_methods.selection_sort(data.numberSort, 'Selection sort with random number elements');
-    await library_methods.selection_sort(data.stringSort, 'Selection sort with random string elements');
+    await library_methods.selection_sort(
+      data.numberSort,
+      "Selection sort with random number elements"
+    );
+    await library_methods.selection_sort(
+      data.stringSort,
+      "Selection sort with random string elements"
+    );
     // test the cocktail sort algorithm:
-    await library_methods.cocktail_sort(data.numberSort, 'Cocktail sort with random number elements');
-    await library_methods.cocktail_sort(data.stringSort, 'Cocktail sort with random string elements');
+    await library_methods.cocktail_sort(
+      data.numberSort,
+      "Cocktail sort with random number elements"
+    );
+    await library_methods.cocktail_sort(
+      data.stringSort,
+      "Cocktail sort with random string elements"
+    );
+    // test sort object array by property:
+    await library_methods
+      .sort_object_array_by_property(
+        data.sortObjectByProperty,
+        'sort object array with random number property values'
+      );
+    await library_methods.sort_object_array_by_property(
+      data.sortObjectByStringProperty,
+      'sort object array with random string property values'
+    );
+    // sort add element to sorted array:
+    await library_methods.putElementInSortedArray(
+      data.putElementInSortedArray,
+      'add number element in sorted array'
+    );
+    await library_methods.putElementInSortedArray(
+      data.putStringInSortedArray,
+      'add string element in sorted array'
+    );
   } catch (error) {
     unexpected_error_message(error.message);
   }
