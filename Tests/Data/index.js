@@ -1,10 +1,6 @@
 'use strict';
-const putElementInSortedArray = require('./testPutElementInSortedArray');
-const putStringInSortedArray = require('./testPutStringInSortedArray');
-const numberSort = require('./testsNumberSort');
-const stringSort = require('./testStringSort');
-const sortObjectByProperty = require('./testSortObjectByProperty');
-const sortObjectByStringProperty = require('./testSortObjectByStringProperty');
+const addElementInSortedObjectArrayByProperty = require('./testAddElementInSortedObjectArrayByProperty');
+const addStringElementInSortedObjectArrayByProperty = require('./testAddStringElementInSortedObjectArrayByProperty');
 const findBestNElements = require('./testFindBestNElements');
 const findWorstNElements = require('./testFindWorstNElements');
 const findBestNElementsInObjectArrayByProperty = require('./testFindBestNElementsInObjectArrayByProperty');
@@ -13,13 +9,15 @@ const findBestNStringElements = require('./testFindBestNStringElements');
 const findBestNStringElementsInObjectArray = require('./testFindBestNStringElementsInObjectArray');
 const findWorstNStringElements = require('./testFindWorstNStringElements');
 const findWorstNStringElementsInObjectArray = require('./testFindWorstNStringElementsInObjectArray');
+const putElementInSortedArray = require('./testPutElementInSortedArray');
+const putStringInSortedArray = require('./testPutStringInSortedArray');
+const numberSort = require('./testsNumberSort');
+const sortObjectByProperty = require('./testSortObjectByProperty');
+const sortObjectByStringProperty = require('./testSortObjectByStringProperty');
+const stringSort = require('./testStringSort');
 module.exports = {
-    putElementInSortedArray,
-    putStringInSortedArray,
-    numberSort,
-    stringSort,
-    sortObjectByProperty, 
-    sortObjectByStringProperty,
+    addElementInSortedObjectArrayByProperty,
+    addStringElementInSortedObjectArrayByProperty,
     findBestNElements,
     findWorstNElements,
     findBestNElementsInObjectArrayByProperty,
@@ -28,4 +26,10 @@ module.exports = {
     findBestNStringElementsInObjectArray,
     findWorstNStringElementsInObjectArray,
     findWorstNStringElements,
+    putElementInSortedArray,
+    putStringInSortedArray,
+    numberSort,
+    sortObjectByProperty, 
+    sortObjectByStringProperty,
+    stringSort,
 };
