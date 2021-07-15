@@ -14,21 +14,20 @@ const inverse_array = require('./inverseArray');
  * @description this function tests if the input of
  * the SortLib library is equals with th required one.
  */
-function putElementInSortedArray(data, method = "put number in sorted array") {
-  new validator(
-    SortLib.addElementInSortedArray(data.scope, data.argument).array
-  )
-    .is_same(data.target)
-    .and()
-    .bind(
-      new validator(
-        SortLib.addElementInSortedArray(
-          inverse_array(data.scope),
-          data.argument
-        ).array
-      ).is_same(inverse_array(data.target))
-    )
-    .on(true, () => success_message(method))
-    .on(false, () => error_message(method));
+async function putElementInSortedArray(data, method = "put number in sorted array") {
+  let output;
+  const result = SortLib.addElementInSortedArray(data.scope, data.argument).array
+  const inverse_result = SortLib.addElementInSortedArray(inverse_array(data.scope),data.argument).array;
+  try {
+    new validator(result)
+      .is_same(data.target)
+      .and()
+      .bind(new validator(inverse_result).is_same(inverse_array(data.target)))
+      .on(true, () => output = Promise.resolve(success_message(method)))
+      .on(false, () => output = Promise.reject(error_message(method)));
+  } catch (error) {
+    output = Promise.reject(error);
+  }
+  return output;
 }
 module.exports = putElementInSortedArray;
