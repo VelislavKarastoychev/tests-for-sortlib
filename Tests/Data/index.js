@@ -2,6 +2,8 @@
 const addElementInSortedObjectArrayByProperty = require('./testAddElementInSortedObjectArrayByProperty');
 const addStringElementInSortedObjectArrayByProperty = require('./testAddStringElementInSortedObjectArrayByProperty');
 const findBestNElements = require('./testFindBestNElements');
+const findElementsInSortedArray = require('./testFindElementsInSortedArray');
+const findElementsInSortedObjectArray = require('./testFindElementsInSortedObjectArrayByProperty');
 const findWorstNElements = require('./testFindWorstNElements');
 const findBestNElementsInObjectArrayByProperty = require('./testFindBestNElementsInObjectArrayByProperty');
 const findWorstNElementsInObjectArrayByProperty = require('./testFindWorstNElementsInObjectArrayByProperty');
@@ -19,11 +21,13 @@ module.exports = {
     addElementInSortedObjectArrayByProperty,
     addStringElementInSortedObjectArrayByProperty,
     findBestNElements,
-    findWorstNElements,
     findBestNElementsInObjectArrayByProperty,
-    findWorstNElementsInObjectArrayByProperty,
     findBestNStringElements,
     findBestNStringElementsInObjectArray,
+    findElementsInSortedArray,
+    findElementsInSortedObjectArray,
+    findWorstNElements,
+    findWorstNElementsInObjectArrayByProperty,
     findWorstNStringElementsInObjectArray,
     findWorstNStringElements,
     putElementInSortedArray,
