@@ -12,7 +12,7 @@ const SortLib = require('@euriklis/sortlib');
  */
 function findBestNElementsInObjectArrayByProperty (n, k, property) {
     let scope = SortLib.generate_random_array(n, null, (el) => {
-        let obj = {};
+        let i, obj = {}, p;
         obj.random_integer = (el * n) >> 0;
         obj[property] = el;
         return obj;
@@ -20,6 +20,6 @@ function findBestNElementsInObjectArrayByProperty (n, k, property) {
     let target = copy_array(scope).sort((a, b) => {
         return b[property] - a[property]; 
     }).slice(0, k);
-    return {scope, target, count : k};
+    return {scope, target, count : k, property};
 }
 module.exports = findBestNElementsInObjectArrayByProperty;
