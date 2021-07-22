@@ -15,10 +15,11 @@ function findWorstNElementsInObjectArrayByProperty (n, k, property) {
         let obj = {};
         obj.integer = (el * n) >> 0;
         obj[property] = el;
+        return obj;
     });
     let target = copy_array(scope).sort((a, b) => {
         return a[property] - b[property];
     }).slice(0, k);
-    return {scope, target, count : k};
+    return {scope, property, target, count : k};
 }
 module.exports = findWorstNElementsInObjectArrayByProperty;
