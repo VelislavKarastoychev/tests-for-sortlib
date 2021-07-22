@@ -15,6 +15,7 @@ const merge_sort = require('./merge_sort');
 const putElementInSortedArray = require('./putElementInSortedArray');
 const quick_sort = require('./quick_sort');
 const remove_element_from_sorted_array = require('./remove_element_from_sorted_array');
+const remove_string_element_from_sorted_array = require('./remove_string_element_from_sorted_array');
 const selection_sort = require('./selection_sort');
 const sort_object_array_by_property = require('./sort_object_array_by_property');
 module.exports = {
@@ -34,6 +35,7 @@ module.exports = {
     putElementInSortedArray,
     quick_sort,
     remove_element_from_sorted_array,
+    remove_string_element_from_sorted_array,
     selection_sort,
     sort_object_array_by_property,
 };
