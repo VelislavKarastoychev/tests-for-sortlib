@@ -1,19 +1,19 @@
 'use strict';
 const SortLib = require('@euriklis/sortlib');
 const copy_array = require('../src/copyArray');
-const inverse_array = require('../src/inverseArray');
-function addStringElementInSortedObjectArrayByProperty(array_length, string_width, argument) {
-    const scope = SortLib.generate_random_string_array(array_length, string_width, (el, i) => {
+function addStringElementInSortedObjectArrayByProperty(array_length, string_width) {
+    let scope = SortLib.generate_random_string_array(array_length, string_width, null,(el, i) => {
         let rand_str_obj = {};
         rand_str_obj.id = i + 1;
-        rand_str_obj[argument] = el;
+        rand_str_obj.attributes = {};
+        rand_str_obj.attributes.value = el;
         return rand_str_obj;
     });
-    const target = copy_array(scope).sort((a, b) => {
-        if (a[argument] > b[argument]) return -1;
-        if (a[argument] < b[argument]) return 1;
-        return 0;
-    });
-    return { scope, target, argument }
+    scope = SortLib.sort_object_array_by_property(scope, ['attributes', 'value'], true).array;
+    const element = {id: 101, attributes : {value: 'ew31r'}};
+    let target = copy_array(scope);
+    target[array_length] = element;
+    target = SortLib.sort_object_array_by_property(target, ['attributes', 'value'], true).array;
+    return { scope, target, property:['attributes', 'value'], argument: element }
 }
 module.exports = addStringElementInSortedObjectArrayByProperty;
