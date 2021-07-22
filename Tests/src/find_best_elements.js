@@ -6,7 +6,7 @@ const success_message = require("./successMessage");
 const validator = require("@euriklis/validator");
 /**
  *
- * @param {{scope : Array.<number | string>, target : Array.<number | string>}} data
+ * @param {{scope : Array.<number | string>, target : Array.<number | string>, count: number}} data
  * @param {'find best elements' | 'find best string elements'} method
  * @description this function tests if the find_best_elements method
  * of the SortLib library works correctly...
