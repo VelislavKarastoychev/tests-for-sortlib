@@ -11,23 +11,19 @@ const copy_array = require("../src/copyArray");
  */
 function findWorstNStringElementsInObjectArray(n, k, t, property) {
   let scope, _target, _target_, target;
-  const alphabet =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234566789";
-  scope = SortLib.generate_random_array(n, null, (el) => {
-    let obj = {};
-    obj.integer = (el * alphabet.length) << 0;
-    obj[property] = "";
-    for (let i = 0; i < t; i++) {
-      obj[property] += alphabet[(el * alphabet.length) << 0];
-    }
-    return obj;
+  scope = SortLib.generate_random_string_array(n, t, null, (el, index) => {
+    let obj = {}; 
+    obj.id = index + 1
+    obj['random integer'] = (Math.random() * n) >> 0;
+    obj[property] = el;
+    return obj
   });
-  _target = copy_array(scope).map(el => {return el = scope[property]}).sort();
-  target = scope.map(el => {
-      return scope.find(scope_elem => {
-          scope_elem[property] === el;
-      });
-  }).slice(0, k);
-  return {scope, target, count : k};
+  _target = copy_array(scope).sort((a, b) => {
+    if (a[property] < b[property]) return -1;
+    else if (a[property] > b[property]) return 1;
+    else return 0;
+  })
+  target = _target.slice(0, k);
+  return {scope, property, target, count : k};
 }
 module.exports = findWorstNStringElementsInObjectArray;
