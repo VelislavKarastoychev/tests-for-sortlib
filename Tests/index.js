@@ -157,7 +157,14 @@ async function run_tests() {
       'find worst for n string elements for object array sorted by a property'
     );
     // test the remove element from sorted array
-    
+    await library_methods.remove_element_from_sorted_array(
+      data.removeElementFromSortedArray(100, 32),
+      'remove number element from sorted array'
+    );
+    await library_methods.remove_string_element_from_sorted_array(
+      data.removeStringElementFromSortedArray(100, 5, 21),
+      'remove string element from sorted array'
+    );
     // test the remove element from sorted object array by property
     // test the filter with validator method
   } catch (error) {
