@@ -102,7 +102,7 @@ async function run_tests() {
       data.sortObjectByStringProperty,
       'sort object array with random string property values'
     );
-    // sort add element to sorted array:
+    // sort add element in sorted array:
     await library_methods.putElementInSortedArray(
       data.putElementInSortedArray,
       'add number element in sorted array'
@@ -111,6 +111,55 @@ async function run_tests() {
       data.putStringInSortedArray,
       'add string element in sorted array'
     );
+    // test the add number element in a sorted object array.
+    await library_methods.add_element_in_sorted_object_array_by_property(
+      data.addElementInSortedObjectArrayByProperty(100, { attributes: { value: 0.767 }, id: 100 }),
+      'add number element in sorted object array by property value'
+    );
+    await library_methods.add_element_in_sorted_object_array_by_property(
+      data.addStringElementInSortedObjectArrayByProperty(100, 5, 'value'),
+      'add string element in sorted object array by property value'
+    );
+    // test the find element in sorted array method:
+    await library_methods.find_elements_in_sorted_array(
+      data.findElementsInSortedArray(100, 54),
+      'find elements in sorted array'
+    );
+    // test the find element in sorted object array by property method:
+    await library_methods.find_elements_in_sorted_object_array_by_property(
+      data.findElementsInSortedObjectArray(100, 55),
+      'find elements in sorted object array by property'
+    );
+    // test find best n elements method...
+    await library_methods.find_best_elements(data.findBestNElements(100, 44), 'find best number elements');
+    // test find worst n number elements
+    await library_methods.find_worst_elements(
+      data.findWorstNElements(100, 53),
+      'find worst number elements'
+    );
+    await library_methods.find_worst_elements(
+      data.findWorstNStringElements(100, 45, 5),
+      'find worst string elements'
+    );
+    // test find best for sorted object array by property
+    await library_methods.find_best_for_object_array_by_property(
+      data.findBestNElementsInObjectArrayByProperty(100, 55, 'value'),
+      'find best number elements in sorted object array by property'
+    );
+    // test the worst for sorted object array by property
+    await library_methods.find_worst_for_object_array_by_property(
+      data.findWorstNElementsInObjectArrayByProperty(100, 34,'value'),
+      'find worst number elements for object array by property'
+    );
+    // test the find worst elements in sorted object array by a property
+    await library_methods.find_worst_for_object_array_by_property(
+      data.findWorstNStringElementsInObjectArray(100, 10, 5, 'text'),
+      'find worst for n string elements for object array sorted by a property'
+    );
+    // test the remove element from sorted array
+    
+    // test the remove element from sorted object array by property
+    // test the filter with validator method
   } catch (error) {
     unexpected_error_message(error.message);
   }
