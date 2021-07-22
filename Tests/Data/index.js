@@ -14,6 +14,7 @@ const findWorstNStringElementsInObjectArray = require('./testFindWorstNStringEle
 const putElementInSortedArray = require('./testPutElementInSortedArray');
 const putStringInSortedArray = require('./testPutStringInSortedArray');
 const numberSort = require('./testsNumberSort');
+const removeElementFromSortedArray = require('./testRemoveElementFromSortedArray');
 const sortObjectByProperty = require('./testSortObjectByProperty');
 const sortObjectByStringProperty = require('./testSortObjectByStringProperty');
 const stringSort = require('./testStringSort');
@@ -33,6 +34,7 @@ module.exports = {
     putElementInSortedArray,
     putStringInSortedArray,
     numberSort,
+    removeElementFromSortedArray,
     sortObjectByProperty, 
     sortObjectByStringProperty,
     stringSort,
