@@ -19,7 +19,8 @@ async function find_best_for_object_array_by_property(
     new validator(
       SortLib.find_best_for_object_array_by_property(
         data.scope,
-        data.count
+        data.property,
+        data.count,
       ).array
     )
       .is_same(data.target)
