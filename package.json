@@ -22,6 +22,7 @@
   "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme",
   "dependencies": {
     "@euriklis/message": "^1.2.3",
+    "@euriklis/sortlib": "^1.1.7",
     "@euriklis/validator": "^1.2.2"
   },
   "devDependencies": {
