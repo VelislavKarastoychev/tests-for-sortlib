@@ -158,7 +158,7 @@ async function run_tests() {
     );
     // test the remove element from sorted array
     await library_methods.remove_element_from_sorted_array(
-      data.removeElementFromSortedArray(100, 32),
+      data.removeElementFromSortedArray(100, 52),
       'remove number element from sorted array'
     );
     await library_methods.remove_string_element_from_sorted_array(
@@ -166,6 +166,10 @@ async function run_tests() {
       'remove string element from sorted array'
     );
     // test the remove element from sorted object array by property
+    await library_methods.remove_element_from_sorted_object_array_by_property(
+      data.removeElementFromSortedObjectArray(100, 90),
+      'remove element from sorted object array by property'
+    );
     // test the filter with validator method
   } catch (error) {
     unexpected_error_message(error.message);
