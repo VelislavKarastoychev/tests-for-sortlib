@@ -176,6 +176,8 @@ async function run_tests() {
     );
     // test if the add in sorted array methods work with empty array
     await library_methods.test_if_add_in_sorted_array_works_with_empty_array();
+    // make sure that the find element in sorted object array works correctly.
+    await library_methods.additional_test_for_find_in_sorted_array();
   } catch (error) {
     unexpected_error_message(error.message);
   }
