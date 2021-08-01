@@ -3,6 +3,7 @@ const add_element_in_sorted_object_array_by_property = require('./add_element_in
 const bubble_sort = require('./bubble_sort');
 const bucket_sort = require('./bucket_sort');
 const cocktail_sort = require('./cocktail_sort');
+const filter_with_validator = require('./filterWithValidator');
 const find_best_elements = require('./find_best_elements');
 const find_best_for_object_array_by_property = require('./find_best_for_object_array_by_property');
 const find_elements_in_sorted_array = require('./find_elements_in_sorted_array');
@@ -24,6 +25,7 @@ module.exports = {
     bubble_sort,
     bucket_sort,
     cocktail_sort,
+    filter_with_validator,
     find_best_elements,
     find_best_for_object_array_by_property,
     find_elements_in_sorted_array,
