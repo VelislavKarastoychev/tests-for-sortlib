@@ -120,6 +120,10 @@ async function run_tests() {
       data.addStringElementInSortedObjectArrayByProperty(100, 5, 'value'),
       'add string element in sorted object array by property value'
     );
+    // test filter with validator method
+    await library_methods.filter_with_validator(
+      data.filterWithValidator
+    );
     // test the find element in sorted array method:
     await library_methods.find_elements_in_sorted_array(
       data.findElementsInSortedArray(100, 54),
