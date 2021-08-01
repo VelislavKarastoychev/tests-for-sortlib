@@ -1,6 +1,7 @@
 'use strict';
 const addElementInSortedObjectArrayByProperty = require('./testAddElementInSortedObjectArrayByProperty');
 const addStringElementInSortedObjectArrayByProperty = require('./testAddStringElementInSortedObjectArrayByProperty');
+const filterWithValidator = require('./testFilterWithValidator');
 const findBestNElements = require('./testFindBestNElements');
 const findElementsInSortedArray = require('./testFindElementsInSortedArray');
 const findElementsInSortedObjectArray = require('./testFindElementsInSortedObjectArrayByProperty');
@@ -23,6 +24,7 @@ const stringSort = require('./testStringSort');
 module.exports = {
     addElementInSortedObjectArrayByProperty,
     addStringElementInSortedObjectArrayByProperty,
+    filterWithValidator,
     findBestNElements,
     findBestNElementsInObjectArrayByProperty,
     findBestNStringElements,
