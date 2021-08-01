@@ -174,7 +174,8 @@ async function run_tests() {
       data.removeElementFromSortedObjectArray(100, 90),
       'remove element from sorted object array by property'
     );
-    // test the filter with validator method
+    // test if the add in sorted array methods work with empty array
+    await library_methods.test_if_add_in_sorted_array_works_with_empty_array();
   } catch (error) {
     unexpected_error_message(error.message);
   }
