@@ -20,6 +20,7 @@ const remove_string_element_from_sorted_array = require('./remove_string_element
 const remove_element_from_sorted_object_array_by_property = require('./remove_element_from_sorted_object_array_by_property');
 const selection_sort = require('./selection_sort');
 const sort_object_array_by_property = require('./sort_object_array_by_property');
+const test_if_add_in_sorted_array_works_with_empty_array = require('./testIfAddInSortedArrayWorksWithEmptyArray');
 module.exports = {
     add_element_in_sorted_object_array_by_property,
     bubble_sort,
@@ -42,4 +43,5 @@ module.exports = {
     remove_element_from_sorted_object_array_by_property,
     selection_sort,
     sort_object_array_by_property,
+    test_if_add_in_sorted_array_works_with_empty_array,
 };
