@@ -1,5 +1,6 @@
 'use strict';
 const add_element_in_sorted_object_array_by_property = require('./add_element_in_sorted_object_array_by_property');
+const additional_test_for_find_in_sorted_array = require('./additional_test_for_find_in_sorted_array');
 const bubble_sort = require('./bubble_sort');
 const bucket_sort = require('./bucket_sort');
 const cocktail_sort = require('./cocktail_sort');
@@ -23,6 +24,7 @@ const sort_object_array_by_property = require('./sort_object_array_by_property')
 const test_if_add_in_sorted_array_works_with_empty_array = require('./testIfAddInSortedArrayWorksWithEmptyArray');
 module.exports = {
     add_element_in_sorted_object_array_by_property,
+    additional_test_for_find_in_sorted_array,
     bubble_sort,
     bucket_sort,
     cocktail_sort,
