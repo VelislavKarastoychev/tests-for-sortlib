@@ -9,6 +9,7 @@ const find_best_elements = require('./find_best_elements');
 const find_best_for_object_array_by_property = require('./find_best_for_object_array_by_property');
 const find_elements_in_sorted_array = require('./find_elements_in_sorted_array');
 const find_elements_in_sorted_object_array_by_property = require('./find_elements_in_sorted_object_array_by_property');
+const find_in_empty_object_array = require('./find_in_empty_object_array');
 const find_worst_elements = require('./find_worst_elements');
 const find_worst_for_object_array_by_property = require('./find_worst_for_object_array_by_property');
 const heap_sort = require('./heap_sort');
@@ -33,6 +34,7 @@ module.exports = {
     find_best_for_object_array_by_property,
     find_elements_in_sorted_array,
     find_elements_in_sorted_object_array_by_property,
+    find_in_empty_object_array,
     find_worst_elements,
     find_worst_for_object_array_by_property,
     heap_sort,
