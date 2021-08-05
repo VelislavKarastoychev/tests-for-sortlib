@@ -11,7 +11,6 @@ const validator = require('@euriklis/validator');
 function find_in_empty_object_array(data, method = 'Find in empty object array') {
     let output;
     try {
-        console.log(data)
         new validator(SortLib.find_elements_in_sorted_object_array_by_property(data.scope, ['id'], data.item, true))
             .is_same(data.target).on(true, () => {
                 output = Promise.resolve(success_message(method))
