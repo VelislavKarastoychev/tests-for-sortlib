@@ -5,6 +5,7 @@ const filterWithValidator = require('./testFilterWithValidator');
 const findBestNElements = require('./testFindBestNElements');
 const findElementsInSortedArray = require('./testFindElementsInSortedArray');
 const findElementsInSortedObjectArray = require('./testFindElementsInSortedObjectArrayByProperty');
+const findInEmptyObjectArray = require('./testFindInEmptyObjectArray');
 const findWorstNElements = require('./testFindWorstNElements');
 const findBestNElementsInObjectArrayByProperty = require('./testFindBestNElementsInObjectArrayByProperty');
 const findWorstNElementsInObjectArrayByProperty = require('./testFindWorstNElementsInObjectArrayByProperty');
@@ -31,6 +32,7 @@ module.exports = {
     findBestNStringElementsInObjectArray,
     findElementsInSortedArray,
     findElementsInSortedObjectArray,
+    findInEmptyObjectArray,
     findWorstNElements,
     findWorstNElementsInObjectArrayByProperty,
     findWorstNStringElementsInObjectArray,
