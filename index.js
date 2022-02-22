@@ -1,9 +1,9 @@
 "use strict";
 // run the current versions of the euriklis packages.
-const validator = require("@euriklis/validator");
-const message = require("@euriklis/message");
-const SortLib = require("@euriklis/sortlib");
-const tests = require('./Tests');
+import validator from '@euriklis/validator';
+import message from '@euriklis/message';
+import SortLib from '@euriklis/sortlib';
+import tests from './Tests/index.js';
 new message()
   .set_color_yellow().bold().italic().underline()
   .append(`This library tests the @euriklis/sortlib package.\n`)
@@ -16,4 +16,4 @@ new message()
   .append(
     `and finally the current version of the @euriklis/message is ${message.version.version}`
   ).reset().log();
-tests()
+tests();
