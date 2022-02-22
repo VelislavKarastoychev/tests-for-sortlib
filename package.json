@@ -21,9 +21,8 @@
   },
   "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme",
   "dependencies": {
-    "@euriklis/message": "^1.2.3",
-    "@euriklis/sortlib": "^1.1.7",
-    "@euriklis/validator": "^1.2.2"
+    "@euriklis/message": "^2.0.0",
+    "@euriklis/validator": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
