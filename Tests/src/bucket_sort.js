@@ -1,9 +1,9 @@
 "use strict";
-const error_message = require("./errorMessage");
-const inverse_array = require("./inverseArray");
-const SortLib = require("@euriklis/sortlib");
-const success_message = require("./successMessage");
-const validator = require("@euriklis/validator");
+import error_message from "./errorMessage.js";
+import inverse_array from "./inverseArray.js";
+import SortLib from "@euriklis/sortlib";
+import success_message from "./successMessage.js";
+import validator from "@euriklis/validator";
 /**
  *
  * @param {{scope : Array.<number>, target : Array.<number>}} data
@@ -32,4 +32,4 @@ async function bucket_sort(data, method = "bucket sort") {
   }
   return output;
 }
-module.exports = bucket_sort;
+export default bucket_sort;
