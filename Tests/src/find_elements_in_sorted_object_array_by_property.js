@@ -1,9 +1,9 @@
 'use strict';
-const error_message = require('./errorMessage');
-const SortLib = require('@euriklis/sortlib');
-const success_message = require('./successMessage');
-const validator = require('@euriklis/validator');
-const unexpected_error_message = require('./unexpectedErrorMessage');
+import error_message from './errorMessage.js';
+import SortLib from '@euriklis/sortlib';
+import success_message from './successMessage.js';
+import validator from '@euriklis/validator';
+import unexpected_error_message from './unexpectedErrorMessage.js';
 /**
  * 
  * @param {{scope: Array.<object>, target: {array: Array.<object>, indices: Array.<number>}, element: object}} data 
@@ -20,4 +20,4 @@ function find_elements_in_sorted_object_array_by_property(data, method = 'find e
         unexpected_error_message(error);
     }
 }
-module.exports = find_elements_in_sorted_object_array_by_property;
+export default find_elements_in_sorted_object_array_by_property;
