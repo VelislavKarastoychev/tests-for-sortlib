@@ -32,4 +32,4 @@ function copy_array (array) {
     }
     return copied_array;
 }
-module.exports = copy_array;
+export default copy_array;
