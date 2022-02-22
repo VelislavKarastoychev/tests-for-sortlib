@@ -1,5 +1,5 @@
 "use strict";
-const SortLib = require("@euriklis/sortlib");
+import SortLib from "@euriklis/sortlib";
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 /**
  * 
@@ -23,4 +23,4 @@ function generate_random_strings(n, k) {
   return scope
 }
 
-module.exports = generate_random_strings;
+export default generate_random_strings;
