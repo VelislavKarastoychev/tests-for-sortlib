@@ -1,6 +1,6 @@
 "use strict";
-const message = require("@euriklis/message");
-module.exports = (err_message) => {
+import message from "@euriklis/message";
+export default (err_message) => {
   return new message()
     .bold()
     .italic()
