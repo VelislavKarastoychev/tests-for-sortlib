@@ -9,10 +9,10 @@
  * how are done the previous tests in this repository.
  * @function run_tests
  */
-const library_methods = require("./src");
-const data = require("./Data");
-const controlled_error_message = require("./src/controlledErrorMessage");
-const unexpected_error_message = require("./src/unexpectedErrorMessage");
+import library_methods from './src/index.js';
+import data from './Data/index.js';
+import controlled_error_message from "./src/controlledErrorMessage.js";
+import unexpected_error_message from "./src/unexpectedErrorMessage.js";
 async function run_tests() {
   try {
     // test the quick sort method:
@@ -185,4 +185,4 @@ async function run_tests() {
     unexpected_error_message(error.message);
   }
 }
-module.exports = run_tests;
+export default run_tests;
