@@ -1,9 +1,9 @@
 'use strict';
-const SortLib = require('@euriklis/sortlib');
-const error_message = require('./errorMessage');
-const success_message = require('./successMessage');
-const inverse_array = require('./inverseArray');
-const validator = require('@euriklis/validator');
+import SortLib from '@euriklis/sortlib';
+import error_message from './errorMessage.js';
+import success_message from './successMessage.js';
+import inverse_array from './inverseArray.js';
+import validator from '@euriklis/validator';
 /**
  * 
  * @param {{
@@ -29,4 +29,4 @@ async function bubble_sort (data, method) {
     }
     return output;
 }
-module.exports = bubble_sort;
+export default bubble_sort;
