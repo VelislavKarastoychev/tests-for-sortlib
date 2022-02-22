@@ -1,10 +1,10 @@
 'use strict';
-const data = require('../Data');
-const error_message = require('./errorMessage');
-const inverse_array = require('./inverseArray');
-const SortLib = require("@euriklis/sortlib");
-const success_message = require('./successMessage');
-const validator = require('@euriklis/validator');
+import data from '../Data/index.js';
+import error_message from './errorMessage.js';
+import inverse_array from './inverseArray.js';
+import SortLib from "@euriklis/sortlib.js";
+import success_message from './successMessage.js';
+import validator from '@euriklis/validator';
 /**
  * 
  * @param {{
@@ -35,4 +35,4 @@ async function add_element_in_sorted_object_array_by_property(data, method = 'ad
     }
     return output;
 }
-module.exports = add_element_in_sorted_object_array_by_property;
+export default add_element_in_sorted_object_array_by_property;
