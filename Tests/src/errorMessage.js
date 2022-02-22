@@ -1,5 +1,5 @@
 "use strict";
-const message = require("@euriklis/message");
+import message from "@euriklis/message";
 function error_message(text) {
   return new message()
     .bold()
@@ -13,4 +13,4 @@ function error_message(text) {
     .reset()
     .log();
 }
-module.exports = error_message;
+export default error_message;
