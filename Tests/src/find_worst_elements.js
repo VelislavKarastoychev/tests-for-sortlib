@@ -1,8 +1,8 @@
 "use strict";
-const error_message = require("./errorMessage");
-const SortLib = require("@euriklis/sortlib");
-const success_message = require("./successMessage");
-const validator = require("@euriklis/validator");
+import error_message from "./errorMessage.js";
+import SortLib from "@euriklis/sortlib";
+import success_message from "./successMessage.js";
+import validator from "@euriklis/validator";
 /**
  *
  * @param {{scope : Array.<number | string>, target : Array.<number | string>, count : number}} data
@@ -26,4 +26,4 @@ async function find_worst_elements(data, method = "find worst elements") {
   }
   return output;
 }
-module.exports = find_worst_elements;
+export default find_worst_elements;
