@@ -1,9 +1,9 @@
 'use strict';
-const error_message = require('./errorMessage');
-const copy_array = require('./copyArray');
-const SortLib = require('@euriklis/sortlib');
-const success_message = require('./successMessage');
-const validator = require('@euriklis/validator');
+import error_message from './errorMessage.js';
+import copy_array  from './copyArray.js';
+import SortLib from '@euriklis/sortlib';
+import success_message from './successMessage.js';
+import validator from '@euriklis/validator';
 /**
  * 
  * @param {'additional test for find in sorted arrays'} method
@@ -43,4 +43,4 @@ async function additional_test_for_find_in_sorted_arrays(method = 'additional te
     }
     return output;
 }
-module.exports = additional_test_for_find_in_sorted_arrays;
+export default additional_test_for_find_in_sorted_arrays;
