@@ -1,8 +1,8 @@
 "use strict";
-const error_message = require("./errorMessage");
-const SortLib = require("@euriklis/sortlib");
-const success_message = require("./successMessage");
-const validator = require("@euriklis/validator");
+import error_message from "./errorMessage.js";
+import SortLib from "@euriklis/sortlib";
+import success_message from "./successMessage.js";
+import validator from "@euriklis/validator";
 /**
  *
  * @param {{scope : Array.<object>, property: string, target : Array.<object>, count : number}} data
@@ -34,4 +34,4 @@ async function find_worst_for_object_array_by_property(
   }
   return output;
 }
-module.exports = find_worst_for_object_array_by_property;
+export default find_worst_for_object_array_by_property;
