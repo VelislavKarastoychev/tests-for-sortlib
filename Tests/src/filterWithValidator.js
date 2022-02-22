@@ -1,8 +1,8 @@
 'use strict';
-const error_message = require('./errorMessage');
-const validator = require('@euriklis/validator');
-const SortLib = require('@euriklis/sortlib');
-const success_message = require('./successMessage');
+import error_message from './errorMessage.js';
+import validator from '@euriklis/validator';
+import SortLib from '@euriklis/sortlib';
+import success_message from './successMessage.js';
 /**
  * 
  * @param {{scope: Array.<{}>, target: Array.<{}>}} data 
@@ -34,4 +34,4 @@ async function filter_with_validator(data, method = 'filter with validator') {
     }
     return output;
 }
-module.exports = filter_with_validator;
+export default filter_with_validator;
