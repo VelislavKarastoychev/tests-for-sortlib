@@ -1,8 +1,8 @@
 'use strict';
-const error_message = require('./errorMessage');
-const SortLib = require('@euriklis/sortlib');
-const success_message = require('./successMessage');
-const validator = require('@euriklis/validator');
+import error_message from './errorMessage.js';
+import SortLib from '@euriklis/sortlib';
+import success_message from './successMessage.js';
+import validator from '@euriklis/validator';
 /**
  * 
  * @param {{scope: Array, target: Array, item: object}} data 
@@ -20,4 +20,4 @@ function find_in_empty_object_array(data, method = 'Find in empty object array')
     }
     return output;
 }
-module.exports = find_in_empty_object_array;
+export default find_in_empty_object_array;
