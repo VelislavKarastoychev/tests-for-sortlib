@@ -5,4 +5,4 @@ function internalError (error_name, error_message) {
     error.message = error_message;
     throw error;
 }
-module.exports = internalError;
+export default internalError;
