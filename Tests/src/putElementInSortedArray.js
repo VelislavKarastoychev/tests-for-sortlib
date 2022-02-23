@@ -1,9 +1,9 @@
 "use strict";
-const success_message = require("./successMessage");
-const error_message = require("./errorMessage");
-const validator = require("@euriklis/validator");
-const SortLib = require("@euriklis/sortlib");
-const inverse_array = require('./inverseArray');
+import success_message from "./successMessage.js";
+import error_message from "./errorMessage.js";
+import validator from "@euriklis/validator";
+import SortLib from "@euriklis/sortlib";
+import inverse_array from './inverseArray.js';
 /**
  * @param {{
  * scope : Array.<string | number>,
@@ -30,4 +30,4 @@ async function putElementInSortedArray(data, method = "put number in sorted arra
   }
   return output;
 }
-module.exports = putElementInSortedArray;
+export default putElementInSortedArray;
