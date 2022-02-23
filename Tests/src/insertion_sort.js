@@ -1,9 +1,9 @@
 "use strict";
-const inverse_array = require("./inverseArray");
-const SortLib = require("@euriklis/sortlib");
-const success_message = require("./successMessage");
-const error_message = require("./errorMessage");
-const validator = require("@euriklis/validator");
+import inverse_array from "./inverseArray.js";
+import SortLib from "@euriklis/sortlib";
+import success_message from "./successMessage.js";
+import error_message from "./errorMessage.js";
+import validator from "@euriklis/validator";
 /**
  *
  * @param {{scope : Array.<number | string>, target:Array.<number | string>}} data
@@ -31,4 +31,4 @@ async function insertion_sort(data, method) {
   }
   return output;
 }
-module.exports = insertion_sort;
+export default insertion_sort;
