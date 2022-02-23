@@ -1,9 +1,9 @@
 'use strict';
-const error_message = require('./errorMessage');
-const SortLib = require('@euriklis/sortlib');
-const success_message = require('./successMessage');
-const validator = require('@euriklis/validator');
-const unexpected_error_message = require('./unexpectedErrorMessage');
+import error_message from './errorMessage.js';
+import SortLib from '@euriklis/sortlib';
+import success_message from './successMessage.js';
+import validator from '@euriklis/validator';
+import unexpected_error_message from './unexpectedErrorMessage.js';
 function remove_string_element_from_sorted_array(data, method) {
     let output, result;
     try {
@@ -16,4 +16,4 @@ function remove_string_element_from_sorted_array(data, method) {
     }
     return output;
 }
-module.exports = remove_string_element_from_sorted_array;
+export default remove_string_element_from_sorted_array;
