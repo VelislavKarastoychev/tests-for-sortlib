@@ -1,29 +1,29 @@
 'use strict';
-const add_element_in_sorted_object_array_by_property = require('./add_element_in_sorted_object_array_by_property');
-const additional_test_for_find_in_sorted_array = require('./additional_test_for_find_in_sorted_array');
-const bubble_sort = require('./bubble_sort');
-const bucket_sort = require('./bucket_sort');
-const cocktail_sort = require('./cocktail_sort');
-const filter_with_validator = require('./filterWithValidator');
-const find_best_elements = require('./find_best_elements');
-const find_best_for_object_array_by_property = require('./find_best_for_object_array_by_property');
-const find_elements_in_sorted_array = require('./find_elements_in_sorted_array');
-const find_elements_in_sorted_object_array_by_property = require('./find_elements_in_sorted_object_array_by_property');
-const find_in_empty_object_array = require('./find_in_empty_object_array');
-const find_worst_elements = require('./find_worst_elements');
-const find_worst_for_object_array_by_property = require('./find_worst_for_object_array_by_property');
-const heap_sort = require('./heap_sort');
-const insertion_sort = require('./insertion_sort');
-const merge_sort = require('./merge_sort');
-const putElementInSortedArray = require('./putElementInSortedArray');
-const quick_sort = require('./quick_sort');
-const remove_element_from_sorted_array = require('./remove_element_from_sorted_array');
-const remove_string_element_from_sorted_array = require('./remove_string_element_from_sorted_array');
-const remove_element_from_sorted_object_array_by_property = require('./remove_element_from_sorted_object_array_by_property');
-const selection_sort = require('./selection_sort');
-const sort_object_array_by_property = require('./sort_object_array_by_property');
-const test_if_add_in_sorted_array_works_with_empty_array = require('./testIfAddInSortedArrayWorksWithEmptyArray');
-module.exports = {
+import add_element_in_sorted_object_array_by_property from './add_element_in_sorted_object_array_by_property.js';
+import additional_test_for_find_in_sorted_array from './additional_test_for_find_in_sorted_array.js';
+import bubble_sort from './bubble_sort.js';
+import bucket_sort from './bucket_sort.js';
+import cocktail_sort from './cocktail_sort.js';
+import filter_with_validator from './filterWithValidator.js';
+import find_best_elements from './find_best_elements.js';
+import find_best_for_object_array_by_property from './find_best_for_object_array_by_property.js';
+import find_elements_in_sorted_array from './find_elements_in_sorted_array.js';
+import find_elements_in_sorted_object_array_by_property from './find_elements_in_sorted_object_array_by_property.js';
+import find_in_empty_object_array from './find_in_empty_object_array.js';
+import find_worst_elements from './find_worst_elements.js';
+import find_worst_for_object_array_by_property from './find_worst_for_object_array_by_property.js';
+import heap_sort from './heap_sort.js';
+import insertion_sort from './insertion_sort.js';
+import merge_sort from './merge_sort.js';
+import putElementInSortedArray from './putElementInSortedArray.js';
+import quick_sort from './quick_sort.js';
+import remove_element_from_sorted_array from './remove_element_from_sorted_array.js';
+import remove_string_element_from_sorted_array from './remove_string_element_from_sorted_array.js';
+import remove_element_from_sorted_object_array_by_property from './remove_element_from_sorted_object_array_by_property.js';
+import selection_sort from './selection_sort.js';
+import sort_object_array_by_property from './sort_object_array_by_property.js';
+import test_if_add_in_sorted_array_works_with_empty_array from './testIfAddInSortedArrayWorksWithEmptyArray.js';
+export {
     add_element_in_sorted_object_array_by_property,
     additional_test_for_find_in_sorted_array,
     bubble_sort,
