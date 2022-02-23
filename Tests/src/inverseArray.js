@@ -21,4 +21,4 @@ function inverse_array(array) {
   if (n % 4 >= 3) copied_array[n - 3] = array[2];
   return copied_array;
 }
-module.exports = inverse_array;
+export default inverse_array;
