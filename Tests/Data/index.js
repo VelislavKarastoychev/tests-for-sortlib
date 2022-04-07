@@ -1,28 +1,28 @@
 'use strict';
-const addElementInSortedObjectArrayByProperty = require('./testAddElementInSortedObjectArrayByProperty');
-const addStringElementInSortedObjectArrayByProperty = require('./testAddStringElementInSortedObjectArrayByProperty');
-const filterWithValidator = require('./testFilterWithValidator');
-const findBestNElements = require('./testFindBestNElements');
-const findElementsInSortedArray = require('./testFindElementsInSortedArray');
-const findElementsInSortedObjectArray = require('./testFindElementsInSortedObjectArrayByProperty');
-const findInEmptyObjectArray = require('./testFindInEmptyObjectArray');
-const findWorstNElements = require('./testFindWorstNElements');
-const findBestNElementsInObjectArrayByProperty = require('./testFindBestNElementsInObjectArrayByProperty');
-const findWorstNElementsInObjectArrayByProperty = require('./testFindWorstNElementsInObjectArrayByProperty');
-const findBestNStringElements = require('./testFindBestNStringElements');
-const findBestNStringElementsInObjectArray = require('./testFindBestNStringElementsInObjectArray');
-const findWorstNStringElements = require('./testFindWorstNStringElements');
-const findWorstNStringElementsInObjectArray = require('./testFindWorstNStringElementsInObjectArray');
-const putElementInSortedArray = require('./testPutElementInSortedArray');
-const putStringInSortedArray = require('./testPutStringInSortedArray');
-const numberSort = require('./testsNumberSort');
-const removeElementFromSortedArray = require('./testRemoveElementFromSortedArray');
-const removeElementFromSortedObjectArray = require('./testRemoveElementFromSortedObjectArray');
-const removeStringElementFromSortedArray = require('./testRemoveStringElementFromSortedArray');
-const sortObjectByProperty = require('./testSortObjectByProperty');
-const sortObjectByStringProperty = require('./testSortObjectByStringProperty');
-const stringSort = require('./testStringSort');
-module.exports = {
+import addElementInSortedObjectArrayByProperty from './testAddElementInSortedObjectArrayByProperty.js';
+import addStringElementInSortedObjectArrayByProperty from './testAddStringElementInSortedObjectArrayByProperty.js';
+import filterWithValidator from './testFilterWithValidator.js';
+import findBestNElements from './testFindBestNElements.js';
+import findElementsInSortedArray from './testFindElementsInSortedArray.js';
+import findElementsInSortedObjectArray from './testFindElementsInSortedObjectArrayByProperty.js';
+import findInEmptyObjectArray from './testFindInEmptyObjectArray.js';
+import findWorstNElements from './testFindWorstNElements.js';
+import findBestNElementsInObjectArrayByProperty from './testFindBestNElementsInObjectArrayByProperty.js';
+import findWorstNElementsInObjectArrayByProperty from './testFindWorstNElementsInObjectArrayByProperty.js';
+import findBestNStringElements from './testFindBestNStringElements.js';
+import findBestNStringElementsInObjectArray from './testFindBestNStringElementsInObjectArray.js';
+import findWorstNStringElements from './testFindWorstNStringElements.js';
+import findWorstNStringElementsInObjectArray from './testFindWorstNStringElementsInObjectArray.js';
+import putElementInSortedArray from './testPutElementInSortedArray.js';
+import putStringInSortedArray from './testPutStringInSortedArray.js';
+import numberSort from './testsNumberSort.js';
+import removeElementFromSortedArray from './testRemoveElementFromSortedArray.js';
+import removeElementFromSortedObjectArray from './testRemoveElementFromSortedObjectArray.js';
+import removeStringElementFromSortedArray from './testRemoveStringElementFromSortedArray.js';
+import sortObjectByProperty from './testSortObjectByProperty.js';
+import sortObjectByStringProperty from './testSortObjectByStringProperty.js';
+import stringSort from './testStringSort.js';
+export {
     addElementInSortedObjectArrayByProperty,
     addStringElementInSortedObjectArrayByProperty,
     filterWithValidator,
@@ -43,7 +43,7 @@ module.exports = {
     removeElementFromSortedArray,
     removeStringElementFromSortedArray,
     removeElementFromSortedObjectArray,
-    sortObjectByProperty, 
+    sortObjectByProperty,
     sortObjectByStringProperty,
     stringSort,
 };
