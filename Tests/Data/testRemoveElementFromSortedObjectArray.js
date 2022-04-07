@@ -1,13 +1,13 @@
 'use strict';
-const internal_error = require('../src/internalError');
-const SortLib = require('@euriklis/sortlib');
+import internal_error from '../src/internalError.js';
+import SortLib from '@euriklis/sortlib';
 /**
  * 
  * @param {number} array_length 
  * @param {string | Array.<string>} property 
  * @param {object} element 
  */
-function removeElementFromSortedObjectArray (array_length, index, element) {
+function removeElementFromSortedObjectArray(array_length, index, element) {
     const property = ['attributes', 'value'];
     // create an object array
     const scope = SortLib.generate_random_array(array_length, null, (el, i) => {
@@ -25,6 +25,6 @@ function removeElementFromSortedObjectArray (array_length, index, element) {
     if (typeof element === 'undefined') element = scope[index];
     const el_i = scope.findIndex((el) => el === element);
     const target = [...scope.slice(0, el_i), ...scope.slice(el_i + 1)];
-    return {scope, target, element, property}
+    return { scope, target, element, property }
 }
-module.exports = removeElementFromSortedObjectArray;
+export default removeElementFromSortedObjectArray;

@@ -1,6 +1,6 @@
 'use strict';
-const copy_array = require('../src/copyArray');
-const SortLib = require('@euriklis/sortlib');
+import copy_array from '../src/copyArray.js';
+import SortLib from '@euriklis/sortlib';
 /**
  * 
  * @param {number} n - the length of the object array
@@ -10,16 +10,17 @@ const SortLib = require('@euriklis/sortlib');
  * @description this function creates data for the testing of the
  * find_best_for_object_array_by_property.
  */
-function findBestNElementsInObjectArrayByProperty (n, k, property) {
+function findBestNElementsInObjectArrayByProperty(n, k, property) {
     let scope = SortLib.generate_random_array(n, null, (el) => {
-        let i, obj = {}, p;
+        let i, obj = {},
+            p;
         obj.random_integer = (el * n) >> 0;
         obj[property] = el;
         return obj;
     });
     let target = copy_array(scope).sort((a, b) => {
-        return b[property] - a[property]; 
+        return b[property] - a[property];
     }).slice(0, k);
-    return {scope, target, count : k, property};
+    return { scope, target, count: k, property };
 }
-module.exports = findBestNElementsInObjectArrayByProperty;
+export default findBestNElementsInObjectArrayByProperty;

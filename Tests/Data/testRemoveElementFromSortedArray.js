@@ -1,7 +1,8 @@
 'use strict';
-const copy_array = require('../src/copyArray');
-const InternalError = require('../src/internalError');
-const SortLib = require('@euriklis/sortlib');
+import copy_array from '../src/copyArray.js';
+import InternalError from '../src/internalError.js';
+import SortLib from '@euriklis/sortlib';
+
 function removeElementFromSortedArray(n, index, element) {
     const scope = SortLib.generate_random_array(n).sort((a, b) => a - b);
     if (typeof index !== 'number') throw InternalError(
@@ -9,10 +10,10 @@ function removeElementFromSortedArray(n, index, element) {
         'The argument index is not integer.'
     );
     if (typeof element === 'undefined') element = scope[index];
-    let i_el = scope.findIndex(el =>  el === element);
+    let i_el = scope.findIndex(el => el === element);
     const target = [...copy_array(scope).slice(0, i_el), ...copy_array(scope).slice(i_el + 1)].sort((a, b) => {
         return a - b;
     });
-    return {scope, target, element}
+    return { scope, target, element }
 }
-module.exports = removeElementFromSortedArray;
+export default removeElementFromSortedArray;

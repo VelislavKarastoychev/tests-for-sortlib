@@ -1,6 +1,6 @@
 "use strict";
-const copy_array = require("../src/copyArray");
-const SortLib = require("@euriklis/sortlib");
+import copy_array from "../src/copyArray.js";
+import SortLib from "@euriklis/sortlib";
 /**
  * 
  * @param {number} n - the length of the array 
@@ -10,12 +10,12 @@ const SortLib = require("@euriklis/sortlib");
  * that is correct output of the method findWorstElements of the SortLib. 
  **/
 function findWorstNElements(n, k) {
-  let scope = SortLib.generate_random_array(n);
-  let target = copy_array(scope)
-    .sort((a, b) => {
-      return a - b;
-    })
-    .slice(0, k);
-    return {scope, target, count : k}
+    let scope = SortLib.generate_random_array(n);
+    let target = copy_array(scope)
+        .sort((a, b) => {
+            return a - b;
+        })
+        .slice(0, k);
+    return { scope, target, count: k }
 }
-module.exports = findWorstNElements;
+export default findWorstNElements;

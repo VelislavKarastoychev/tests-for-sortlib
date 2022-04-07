@@ -1,6 +1,6 @@
 'use strict';
-const SortLib = require('@euriklis/sortlib');
-const copy_array = require('../src/copyArray');
+import SortLib from '@euriklis/sortlib';
+import copy_array from '../src/copyArray.js';
 /**
  * 
  * @param {number} array_length
@@ -11,7 +11,7 @@ function addElementInSortedObjectArrayByProperty(array_length, element) {
     let scope, target, copy_scope;
     scope = SortLib.generate_random_array(array_length, null, (el, i) => {
         return el = {
-            attributes : {value: el},
+            attributes: { value: el },
             id: i
         }
     });
@@ -21,4 +21,4 @@ function addElementInSortedObjectArrayByProperty(array_length, element) {
     target = SortLib.sort_object_array_by_property(copy_scope, ['attributes', 'value'], true).array;
     return { argument: element, scope, property: ['attributes', 'value'], target };
 }
-module.exports = addElementInSortedObjectArrayByProperty;
+export default addElementInSortedObjectArrayByProperty;

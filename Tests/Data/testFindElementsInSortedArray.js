@@ -1,5 +1,5 @@
 'use strict';
-const SortLib = require('@euriklis/sortlib');
+import SortLib from '@euriklis/sortlib';
 /**
  * 
  * @param {number} array_length 
@@ -13,21 +13,22 @@ const SortLib = require('@euriklis/sortlib');
  * given element and the index of this element in an array.
  */
 function findElementsInSortedArray(array_length, position) {
-    let source, target, element,  
-    random_array = SortLib.generate_random_array(array_length);
+    let source, target, element,
+        random_array = SortLib.generate_random_array(array_length);
     // sort the random array...
     random_array = SortLib.quick_sort(random_array, true).array;
     if (position >= array_length || position <= -1) {
         source = random_array;
         element = Math.random() * array_length;
-        target =  {
-            array: [], indices: [-1]
+        target = {
+            array: [],
+            indices: [-1]
         }
     } else {
         source = random_array;
         element = random_array[position];
-        target = {array : [element], indices : [position]}
+        target = { array: [element], indices: [position] }
     }
-    return {source, target, element};
+    return { source, target, element };
 }
-module.exports = findElementsInSortedArray;
+export default findElementsInSortedArray;

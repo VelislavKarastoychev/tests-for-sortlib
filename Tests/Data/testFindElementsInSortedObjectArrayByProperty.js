@@ -1,5 +1,5 @@
 'use strict';
-const SortLib = require('@euriklis/sortlib');
+import SortLib from '@euriklis/sortlib';
 /**
  * 
  * @param {number} len 
@@ -26,4 +26,4 @@ function findElementsInSortedObjectArrayByProperty(len, position) {
         element: scope[position]
     };
 }
-module.exports = findElementsInSortedObjectArrayByProperty;
+export default findElementsInSortedObjectArrayByProperty;

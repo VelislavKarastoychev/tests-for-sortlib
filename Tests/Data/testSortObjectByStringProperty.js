@@ -1,12 +1,12 @@
 'use strict';
-const copy_array = require('../src/copyArray');
-const create_random_strings = require('../src/generateRandomStrings');
+import copy_array from '../src/copyArray.js';
+import create_random_strings from '../src/generateRandomStrings.js';
 const _scope_ = create_random_strings(100, 5);
 let scope = [];
-for (let i = 0;i < _scope_.length;i++) {
+for (let i = 0; i < _scope_.length; i++) {
     scope[i] = {
-        id : i,
-        value : _scope_[i]
+        id: i,
+        value: _scope_[i]
     }
 }
 let target = copy_array(scope).sort((a, b) => {
@@ -14,8 +14,8 @@ let target = copy_array(scope).sort((a, b) => {
         return 1;
     }
     if (a.value < b.value) {
-        return - 1;
+        return -1;
     }
     return 0;
 });
-module.exports = {scope, target, property : 'value'};
+export default { scope, target, property: 'value' };

@@ -1,6 +1,6 @@
 'use strict';
-const internal_error = require('../src/internalError');
-const SortLib = require('@euriklis/sortlib');
+import internal_error from '../src/internalError.js';
+import SortLib from '@euriklis/sortlib';
 /**
  * 
  * @param {number} array_length 
@@ -10,7 +10,7 @@ const SortLib = require('@euriklis/sortlib');
  * @description this function generates a data for
  * testing of the remove element from sorted array. 
  */
-function removeStringElementFromSortedArray (array_length, width, index, element) {
+function removeStringElementFromSortedArray(array_length, width, index, element) {
     const scope = SortLib.generate_random_string_array(array_length, width).sort((a, b) => {
         if (a < b) return 1;
         if (a > b) return -1;
@@ -20,6 +20,6 @@ function removeStringElementFromSortedArray (array_length, width, index, element
     if (typeof index === 'undefined') internal_error('internal error in remove element from sorted array', 'the index parameter in the data generator for string elements is not defined');
     let i_el = scope.findIndex(el => el === element);
     const target = [...scope.slice(0, i_el), ...scope.slice(i_el + 1)];
-    return {scope, element, target};
+    return { scope, element, target };
 }
-module.exports = removeStringElementFromSortedArray;
+export default removeStringElementFromSortedArray;
