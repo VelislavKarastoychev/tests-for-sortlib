@@ -1,9 +1,9 @@
 'use strict'
-const SortLib = require('@euriklis/sortlib');
-const validator = require('@euriklis/validator');
-const inverse_array = require('./inverseArray');
-const error_message = require('./errorMessage');
-const success_message = require('./successMessage');
+import SortLib from '@euriklis/sortlib';
+import validator from '@euriklis/validator';
+import inverse_array from './inverseArray.js';
+import error_message from './errorMessage.js';
+import success_message from './successMessage.js';
 /**
  * 
  * @param {{scope : Array.<object>, target : Array.<object>, property : string}} data 
@@ -16,19 +16,19 @@ async function sort_object_array_by_property(data, method = 'sort object array b
             .is_same(data.target)
             .and().bind(
                 new validator(SortLib.sort_object_array_by_property(data.scope, data.property, false, 'quick sort').array)
-                    .is_same(inverse_array(data.target))
+                .is_same(inverse_array(data.target))
             ).and().bind(
                 new validator(SortLib.sort_object_array_by_property(data.scope, data.property, true, 'merge sort').array)
-                    .is_same(data.target)
+                .is_same(data.target)
             ).and().bind(
                 new validator(SortLib.sort_object_array_by_property(data.scope, data.property, false, 'merge sort').array)
-                    .is_same(inverse_array(data.target))
+                .is_same(inverse_array(data.target))
             ).and().bind(
                 new validator(SortLib.sort_object_array_by_property(data.scope, data.property, true, 'heap sort').array)
-                    .is_same(data.target)
+                .is_same(data.target)
             ).and().bind(
                 new validator(SortLib.sort_object_array_by_property(data.scope, data.property, false, 'heap sort').array)
-                    .is_same(inverse_array(data.target))
+                .is_same(inverse_array(data.target))
             )
             // this is commented because of the string array testing
             // if you test only number properties, this will works as well
@@ -50,4 +50,4 @@ async function sort_object_array_by_property(data, method = 'sort object array b
     }
     return output;
 }
-module.exports = sort_object_array_by_property;
+export default sort_object_array_by_property;
