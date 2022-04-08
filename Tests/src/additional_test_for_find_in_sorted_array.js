@@ -1,6 +1,6 @@
 'use strict';
 import error_message from './errorMessage.js';
-import copy_array  from './copyArray.js';
+import copy_array from './copyArray.js';
 import SortLib from '@euriklis/sortlib';
 import success_message from './successMessage.js';
 import validator from '@euriklis/validator';
