@@ -1,8 +1,8 @@
 'use strict';
-import data from '../Data/index.js';
+import * as data from '../Data/index.js';
 import error_message from './errorMessage.js';
 import inverse_array from './inverseArray.js';
-import SortLib from "@euriklis/sortlib.js";
+import SortLib from "@euriklis/sortlib";
 import success_message from './successMessage.js';
 import validator from '@euriklis/validator';
 /**
@@ -25,7 +25,7 @@ async function add_element_in_sorted_object_array_by_property(data, method = 'ad
             .is_same(data.target)
             .and().bind(
                 new validator(SortLib.add_element_in_sorted_object_array_by_property(inverse_array(data.scope), data.property, data.argument, false))
-                    .is_same(inverse_array(data.target))
+                .is_same(inverse_array(data.target))
             ).on(true, () => output = Promise.resolve(success_message(method)))
             .on(false, () => {
                 output = Promise.reject(error_message(method))
