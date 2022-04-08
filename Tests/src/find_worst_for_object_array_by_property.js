@@ -11,27 +11,27 @@ import validator from "@euriklis/validator";
  * package find_worst_for_object_array_by_property works correctly.
  **/
 async function find_worst_for_object_array_by_property(
-  data,
-  method = "find worst for object array by property"
+    data,
+    method = "find worst for object array by property"
 ) {
-  let output, result;
-  try {
-    result = SortLib.find_worst_for_object_array_by_property(
-      data.scope,
-      data.property,
-      data.count,
-    ).array
-    new validator(result)
-      .is_same(data.target)
-      .on(true, () => {
-        output = Promise.resolve(success_message(method));
-      })
-      .on(false, () => {
-        output = Promise.reject(error_message(method));
-      });
-  } catch (error) {
-    output = Promise.reject(error);
-  }
-  return output;
+    let output, result;
+    try {
+        result = SortLib.find_worst_for_object_array_by_property(
+            data.scope,
+            data.property,
+            data.count,
+        ).array
+        new validator(result)
+            .is_same(data.target)
+            .on(true, () => {
+                output = Promise.resolve(success_message(method));
+            })
+            .on(false, () => {
+                output = Promise.reject(error_message(method));
+            });
+    } catch (error) {
+        output = Promise.reject(error);
+    }
+    return output;
 }
 export default find_worst_for_object_array_by_property;
