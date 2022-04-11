@@ -14,7 +14,8 @@
     "url": "git+ssh://git@github.com/VelislavKarastoychev/tests-for-sortlib.git"
   },
   "keywords": [
-    "sortlib"
+    "sortlib",
+    "tests for the sortlib package"
   ],
   "author": "Euriklis <euriklis@hotmail.com>",
   "license": "MIT",
