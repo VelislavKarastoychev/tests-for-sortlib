@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 // run the current versions of the euriklis packages.
 import validator from '@euriklis/validator';
