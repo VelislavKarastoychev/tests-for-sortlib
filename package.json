@@ -1,5 +1,5 @@
 {
-  "name": "tests-for-sortlib",
+  "name": "@euriklis/tests-for-sortlib",
   "version": "2.0.0",
   "description": "Tests for the @euriklis/sortlib",
   "type": "module",
