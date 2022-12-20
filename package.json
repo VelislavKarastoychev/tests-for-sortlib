@@ -25,7 +25,8 @@
   "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme",
   "dependencies": {
     "@euriklis/message": "^2.0.0",
-    "@euriklis/validator": "^3.0.0"
+    "@euriklis/validator": "^3.0.0",
+    "@euriklis/sortlib": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
