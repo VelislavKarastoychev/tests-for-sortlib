@@ -181,6 +181,99 @@ async function run_tests() {
         // test if the find element in sorted object array works correctly
         // for empty arrays in which the element does not exists.
         await library_methods.find_in_empty_object_array(data.findInEmptyObjectArray);
+        await library_methods.find_elements_in_sorted_object_array_by_property2(
+            data.findElementsInSortedObjectArrayByProperty2(),
+            'additional test for find elements in sorted object array by property'
+        );
+        await library_methods.add_element_in_sorted_array_async(
+            data.putElementInSortedArray
+        )
+        await library_methods.add_element_in_sorted_object_array_by_property_async(
+            data.addElementInSortedObjectArrayByProperty(485, { attributes: { value: 0.767 }, id: 100 }),
+        )
+        await library_methods.filter_async(
+            data.filter(1000),
+        )
+        await library_methods.filter_with_validator_async(
+            data.filterWithValidator
+        )
+        await library_methods.find_elements_in_sorted_array_async(
+            data.findElementsInSortedArray(100, 53)
+        )
+        await library_methods.find_elements_in_sorted_object_array_by_property_async(
+            data.findElementsInSortedObjectArrayByProperty2(),
+        )
+        await library_methods.remove_element_from_sorted_array_async(
+            data.removeElementFromSortedArray(100, 10),
+        )
+        await library_methods.remove_element_from_sorted_object_array_by_property_async(
+            data.removeElementFromSortedObjectArray(100, 10)
+        )
+        await library_methods.merge_sort_async(
+            data.numberSort
+        )
+        await library_methods.merge_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.insertion_sort_async(
+            data.numberSort,
+        )
+        await library_methods.insertion_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.selection_sort_async(
+            data.numberSort,
+        )
+        await library_methods.selection_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.quick_sort_async(
+            data.numberSort,
+        )
+        await library_methods.quick_sort_array_async(
+            data.stringSort,
+        );
+        await library_methods.bubble_sort_async(
+            data.numberSort,
+        )
+        await library_methods.bubble_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.heap_sort_async(
+            data.numberSort,
+        )
+        await library_methods.heap_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.cocktail_sort_async(
+            data.numberSort,
+        )
+        await library_methods.cocktail_sort_array_async(
+            data.stringSort
+        )
+        await library_methods.bucket_sort_async(
+            data.numberSort,
+        )
+        await library_methods.bucket_sort_array_async(
+            data.numberSort,
+        )
+        await library_methods.generate_random_array_async(10);
+        await library_methods.generate_random_string_array_async(10, 10);
+        await library_methods.find_best_elements_async(
+            data.findBestNElements(100, 10),
+        )        
+        await library_methods.find_worst_elements_async(
+            data.findWorstNElements(100, 9)
+        )
+        await library_methods.sort_object_array_by_property_async(
+            data.sortObjectByProperty,
+        )
+        await library_methods.find_best_for_object_array_by_property_async(
+            data.findBestNElementsInObjectArrayByProperty(100, 10, 'Doncho'),
+        )
+        await library_methods.find_worst_for_object_array_by_property_async(
+            data.findWorstNElementsInObjectArrayByProperty(100, 9, 'Pak Doncho')
+        )
     } catch (error) {
         unexpected_error_message(error.message);
     }

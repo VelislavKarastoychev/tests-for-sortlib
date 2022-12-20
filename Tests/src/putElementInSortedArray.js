@@ -17,7 +17,7 @@ import inverse_array from './inverseArray.js';
 async function putElementInSortedArray(data, method = "put number in sorted array") {
   let output;
   const result = SortLib.addElementInSortedArray(data.scope, data.argument).array
-  const inverse_result = SortLib.addElementInSortedArray(inverse_array(data.scope),data.argument).array;
+  const inverse_result = SortLib.addElementInSortedArray(inverse_array(data.scope),data.argument, false).array;
   try {
     new validator(result)
       .is_same(data.target)

@@ -1,10 +1,12 @@
 'use strict';
 import addElementInSortedObjectArrayByProperty from './testAddElementInSortedObjectArrayByProperty.js';
 import addStringElementInSortedObjectArrayByProperty from './testAddStringElementInSortedObjectArrayByProperty.js';
+import filter from './testFilter.js';
 import filterWithValidator from './testFilterWithValidator.js';
 import findBestNElements from './testFindBestNElements.js';
 import findElementsInSortedArray from './testFindElementsInSortedArray.js';
 import findElementsInSortedObjectArray from './testFindElementsInSortedObjectArrayByProperty.js';
+import findElementsInSortedObjectArrayByProperty2 from './testFindElementsInSortedObjectArrayByProperty1.js';
 import findInEmptyObjectArray from './testFindInEmptyObjectArray.js';
 import findWorstNElements from './testFindWorstNElements.js';
 import findBestNElementsInObjectArrayByProperty from './testFindBestNElementsInObjectArrayByProperty.js';
@@ -25,6 +27,7 @@ import stringSort from './testStringSort.js';
 export {
     addElementInSortedObjectArrayByProperty,
     addStringElementInSortedObjectArrayByProperty,
+    filter,
     filterWithValidator,
     findBestNElements,
     findBestNElementsInObjectArrayByProperty,
@@ -35,6 +38,7 @@ export {
     findInEmptyObjectArray,
     findWorstNElements,
     findWorstNElementsInObjectArrayByProperty,
+    findElementsInSortedObjectArrayByProperty2,
     findWorstNStringElementsInObjectArray,
     findWorstNStringElements,
     putElementInSortedArray,

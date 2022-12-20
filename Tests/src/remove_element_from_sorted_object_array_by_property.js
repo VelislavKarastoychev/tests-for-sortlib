@@ -17,7 +17,7 @@ function remove_element_from_sorted_object_array_by_property (data, method) {
     let output, result;
     try {
         result = SortLib.remove_element_from_sorted_object_array_by_property(data.scope,data.property, data.element, true);
-        new validator(result).is_same(data.target)
+        new validator(result.array).is_same(data.target)
         .on(true, () => {
             output = Promise.resolve(success_message(method));
         }).on(false, () => {

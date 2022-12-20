@@ -12,8 +12,8 @@ import SortLib from '@euriklis/sortlib';
  */
 function removeStringElementFromSortedArray(array_length, width, index, element) {
     const scope = SortLib.generate_random_string_array(array_length, width).sort((a, b) => {
-        if (a < b) return 1;
-        if (a > b) return -1;
+        if (a < b) return -1;
+        if (a > b) return 1;
         return 0;
     });
     if (typeof element === 'undefined') element = scope[index];
