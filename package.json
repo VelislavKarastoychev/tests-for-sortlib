@@ -1,6 +1,6 @@
 {
   "name": "@euriklis/tests-for-sortlib",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Tests for the @euriklis/sortlib",
   "type": "module",
   "main": "index.js",
@@ -25,8 +25,8 @@
   "homepage": "https://github.com/VelislavKarastoychev/tests-for-sortlib#readme",
   "dependencies": {
     "@euriklis/message": "^2.0.0",
-    "@euriklis/validator": "^3.0.0",
-    "@euriklis/sortlib": "^4.0.0"
+    "@euriklis/sortlib": "github:VelislavKarastoychev/euriklis-sortlib",
+    "@euriklis/validator": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
