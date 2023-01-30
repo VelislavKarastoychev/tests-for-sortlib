@@ -1,6 +1,6 @@
 {
   "name": "@euriklis/tests-for-sortlib",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Tests for the @euriklis/sortlib",
   "type": "module",
   "main": "index.js",
